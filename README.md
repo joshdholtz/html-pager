@@ -1,5 +1,5 @@
 
-# Example using Sinatra with HAML and ERD templating
+# Example using Sinatra with HAML and ERB templating
 
 ```` ruby
 
