@@ -6,6 +6,8 @@ Gem::Specification.new do |s|
 	s.description = 'Generate paging component in HTML'
 	s.authors     = ['Josh HOltz']
 	s.email       = 'me@joshholtz.com'
-	s.files       = ['lib/html-pager']
+	s.files       = ['lib/html_pager.rb']
 	s.homepage    = 'https://github.com/joshdholtz/html-pager'
+
+	s.add_dependency('haml', '>= 4.0.2')
 end

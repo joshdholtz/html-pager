@@ -1,7 +1,7 @@
-````
-
 require 'sinatra'
-require 'html-pager'
+require './lib/html_pager'
+
+enable :inline_templates
 
 get '/' do
 	page = params[:page]
@@ -20,5 +20,3 @@ __END__
 		This is an example
 
 		%div= @pager
-
-````
