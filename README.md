@@ -1,5 +1,60 @@
-
 # Example using Sinatra with HAML and ERB templating
+
+## Installation - Gemfile
+```` ruby
+gem 'html_pager', :git => 'git@github.com:joshdholtz/html-pager.git'
+````
+
+## Quick Use
+
+```` ruby
+
+require 'html_pager'
+
+# Initializes pager with paging information
+@pager = HTMLPager::Pager.new(:route => "/search", :current_page => page.to_i, :show_n_pages => 5, :total_page_count => 10)
+
+# Returns the HTML in the format below
+@pager.to_s
+
+````
+
+## HTML Generated
+```` html
+
+<div class='pagination'>
+  <ul>
+    <li>
+      <a href='/erb-example?page=3'>Back yo</a>
+    </li>
+    <li>
+      <a class='current-page' href='/erb-example?page=4'>4</a>
+    </li>
+    <li>
+      <a class='' href='/erb-example?page=5'>5</a>
+    </li>
+    <li>
+      <a class='' href='/erb-example?page=6'>6</a>
+    </li>
+    <li>
+      <a class='' href='/erb-example?page=7'>7</a>
+    </li>
+    <li>
+      <a class='' href='/erb-example?page=8'>8</a>
+    </li>
+    <li>
+      <a href='/erb-example?page=5'>Forward yo</a>
+    </li>
+  </ul>
+</div>
+
+````
+
+## With Bootstrap
+![Imgur](http://i.imgur.com/lcyr6c4.png)
+
+## Without Bootstrap
+![Imgur](http://i.imgur.com/f5pfQz0.png)
 
 ```` ruby
 
