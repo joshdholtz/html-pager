@@ -22,6 +22,8 @@ module HTMLPager
 			@current_page = @info[:current_page]
 			@total_page_count = @info[:total_page_count]
 
+			@route += "?" unless @route.include?("?")
+
 			@max_page = @total_page_count
 			if @max_page - @current_page > show_number_of_pages - 1
 				@max_page = @current_page + show_number_of_pages - 1

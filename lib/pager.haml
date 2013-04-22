@@ -3,14 +3,14 @@
 		%ul
 			- if @current_page > 1
 				%li
-					%a{:href => "#{@route}?#{@page_param_name}=#{@current_page-1}"} #{@previous_page}
+					%a{:href => "#{@route}#{@page_param_name}=#{@current_page-1}"} #{@previous_page}
 			- if (@current_page..@max_page).to_a.length < 5
 				- ( (@min_page) .. (@current_page-1)).each do |n|
 					%li
-						%a{:href => "#{@route}?#{@page_param_name}=#{n}"} #{n}
+						%a{:href => "#{@route}#{@page_param_name}=#{n}"} #{n}
 			- (@current_page..@max_page).each do |n|
 				%li
-					%a{:href => "#{@route}?#{@page_param_name}=#{n}", :class => (n == @current_page ? "current-page" : "")} #{n}
+					%a{:href => "#{@route}#{@page_param_name}=#{n}", :class => (n == @current_page ? "current-page" : "")} #{n}
 			- if @current_page < @total_page_count && @current_page != @max_page
 				%li
-					%a{:href => "#{@route}?#{@page_param_name}=#{@current_page+1}"} #{@next_page}
+					%a{:href => "#{@route}#{@page_param_name}=#{@current_page+1}"} #{@next_page}
