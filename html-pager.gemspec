@@ -9,5 +9,5 @@ Gem::Specification.new do |s|
 	s.files       = ['lib/html_pager.rb']
 	s.homepage    = 'https://github.com/joshdholtz/html-pager'
 
-	s.add_dependency('haml', '>= 4.0.2')
+	s.add_dependency('haml', '>= 3.1.7')
 end
