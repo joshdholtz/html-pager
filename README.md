@@ -1,8 +1,15 @@
 # Example using Sinatra with HAML and ERB templating
 
+## Installation - Gemfile
+```` ruby
+gem 'html_pager', :git => 'git@github.com:joshdholtz/html-pager.git'
+````
+
 ## Quick Use
 
 ```` ruby
+
+require 'html_pager'
 
 # Initializes pager with paging information
 @pager = HTMLPager::Pager.new(:route => "/search", :current_page => page.to_i, :show_n_pages => 5, :total_page_count => 10)
