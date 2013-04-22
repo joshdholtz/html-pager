@@ -1,7 +1,7 @@
 ````
 
 require 'sinatra'
-require 'html-pager'
+require 'html_pager'
 
 get '/' do
 	page = params[:page]
