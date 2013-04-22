@@ -1,5 +1,10 @@
-
 # Example using Sinatra with HAML and ERB templating
+
+## With Bootstrap
+![Imgur](http://i.imgur.com/lcyr6c4.png)
+
+## Without Bootstrap
+![Imgur](http://i.imgur.com/f5pfQz0.png)
 
 ```` ruby
 
