@@ -9,7 +9,9 @@ module HTMLPager
 			@info.merge! info
 		end
 
-		def to_html
+		def to_html(info = {})
+			@info.merge! info
+
 			show_number_of_pages = @info[:show_n_pages]
 
 			@page_param_name = @info[:page_param_name]
