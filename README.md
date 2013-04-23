@@ -2,7 +2,7 @@
 
 ## Installation - Gemfile
 ```` ruby
-gem 'html_pager', :git => 'git@github.com:joshdholtz/html-pager.git'
+gem 'html_pager', :git => 'git://github.com/joshdholtz/html-pager.git'
 ````
 
 ## Quick Use
